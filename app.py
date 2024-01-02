@@ -27,17 +27,6 @@ def get_total_combinations_and_get_distribution_list_and_get_probability():
             l.append(total)
             distribution_list.append(combination_map)
     
-    
-    sides =6
-    for i in range(1, sides + 1):
-        for j in range(1, sides + 1):
-            total = i + j
-            combination_map = {
-                "Die A": i,
-                "Die B": j,
-                "Sum": total,
-            }
-            l.append(total)
 
     probability = []
     x = list(set(l))
